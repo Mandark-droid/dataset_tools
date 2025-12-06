@@ -1,0 +1,225 @@
+{
+  "datasets": {
+    "dataset_ids": [
+      "MegaScience/MegaScience",
+      "microsoft/orca-math-word-problems-200k",
+      "argilla/distilabel-math-preference-dpo",
+      "HuggingFaceTB/cosmopedia-100k",
+      "microsoft/NextCoderDataset",
+      "MegaScience/TextbookReasoning",
+      "SynthLabsAI/Big-Math-RL-Verified",
+      "microsoft/EpiCoder-func-380k",
+      "voidful/reasoning_gemini_300k",
+      "Open-Orca/1million-gpt-4",
+      "pAILabs/infosec-security-qa",
+      "CyberNative/Code_Vulnerability_Security_DPO",
+      "miromind-ai/MiroVerse-v0.1",
+      "rajpurkar/squad",
+      "ElMater06/orcathinker",
+      "arcee-ai/synthetic-data-gen",
+      "Replete-AI/OpenHermes-2.5-Filtered",
+      "sequelbox/Titanium2-DeepSeek-R1",
+      "sequelbox/Raiden-DeepSeek-R1"
+    ],
+    "split": "train",
+    "field_mapping": {
+       "allenai/big-reasoning-traces": {
+        "prompt": "input",
+        "response": "output"
+      }, "math-ai/StackMathQA": {
+        "Q": "input",
+        "A": "output"
+      },
+         "sequelbox/Titanium2-DeepSeek-R1": {
+        "prompt": "input",
+        "completion": "output"
+      },
+      "sequelbox/Raiden-DeepSeek-R1": {
+        "prompt": "input",
+        "response": "output"
+      },
+      "sequelbox/Tachibana-QVQ": {
+        "prompt": "input",
+        "response": "output"
+      },
+      "sequelbox/Polytope": {
+        "prompt": "input",
+        "response": "output"
+      },
+       "kshitijthakkar/cleaned-synthetic-ai-tasks-v5.1": {
+        "task": "task",
+        "input": "input",
+        "output": "output"
+      },
+      "Replete-AI/OpenHermes-2.5-Filtered": {
+        "instruction": "task",
+        "input": "input",
+        "output": "output"
+      },
+      "arcee-ai/synthetic-data-gen": {
+        "Abstract": "task",
+        "Question": "input",
+        "Answer": "output"
+      },
+      "ElMater06/orcathinker": {
+        "system_prompt": "task",
+        "question": "input",
+        "response": "output"
+      },
+      "rajpurkar/squad": {
+        "context": "task",
+        "question": "input",
+        "answers": "output"
+      },
+      "CyberNative/Code_Vulnerability_Security_DPO": {
+        "vulnerability": "task",
+        "question": "input",
+        "chosen": "output"
+      },
+       "bitext/Bitext-retail-banking-llm-chatbot-training-dataset": {
+        "intent": "task",
+        "instruction": "input",
+        "response": "output"
+      },
+      "pAILabs/infosec-security-qa": {
+        "question": "input",
+        "answer": "output"
+      },
+      "Open-Orca/1million-gpt-4": {
+        "system_prompt": "task",
+        "question": "input",
+        "response": "output"
+      },
+      "voidful/reasoning_gemini_300k": {
+        "message": "input",
+        "reasoning": "output"
+      },
+      "causal-lm/cot_alpaca": {
+        "instruction": "input",
+        "input": "task",
+        "output": "output"
+      },
+       "causal-lm/cot_flan": {
+        "instruction": "input",
+        "input": "task",
+        "output": "output"
+      },
+      "microsoft/orca-math-word-problems-200k": {
+        "question": "input",
+        "answer": "output"
+      },
+      "argilla/distilabel-math-preference-dpo": {
+        "instruction": "input",
+        "chosen_response": "output"
+      },
+      "HuggingFaceTB/cosmopedia-100k": {
+        "prompt": "input",
+        "text": "output"
+      },
+      "MegaScience/TextbookReasoning": {
+        "question": "input",
+        "answer": "output"
+      },
+      "MegaScience/MegaScience": {
+        "question": "input",
+        "answer": "output"
+      },
+      "microsoft/NextCoderDataset": {
+        "prompt": "input",
+        "completion": "output"
+      },
+      "SynthLabsAI/Big-Math-RL-Verified": {
+        "problem": "input",
+        "answer": "output"
+      },
+      "open-r1/OpenR1-Math-220k": {
+        "problem": "input",
+        "solution": "output"
+      },
+      "microsoft/EpiCoder-func-380k": {
+        "instruction": "input",
+        "answer": "output"
+      },
+      "nvidia/OpenScienceReasoning-2": {
+        "input": "input",
+        "output": "output"
+      },
+      "nvidia/AceReason-Math": {
+        "problem": "input",
+        "answer": "output"
+      },
+      "kshitijthakkar/cleaned-synthetic-ai-tasks-v3": {
+        "task": "task",
+        "input": "input",
+        "output": "output"
+      },
+        "HelpingAI/Intermediate-Thinking-130k": {
+        "instruction": "input",
+        "output": "output"
+      },
+      "HelpingAI/Dhanishtha-2.0-SUPERTHINKER":{
+        "instruction": "input",
+        "output": "output"
+      }
+    },
+    "task_mapping": {
+      "sequelbox/Titanium2-DeepSeek-R1": "Answer questions or follow instructions based on the given context",
+      "sequelbox/Raiden-DeepSeek-R1": "Answer questions or follow instructions based on the given context",
+      "sequelbox/Tachibana-QVQ": "Answer questions or follow instructions based on the given context",
+      "sequelbox/Polytope": "Answer questions or follow instructions based on the given context",
+      "allenai/big-reasoning-traces": "Think through the question before answering.",
+      "math-ai/StackMathQA": "Answer questions or follow instructions based on the given context",
+      "pAILabs/infosec-security-qa": "Answer questions related to security",
+      "voidful/reasoning_gemini_300k": "Solve questions with clear, step-by-step reasoning grounded in textbook-level knowledge.",
+      "argilla/distilabel-math-preference-dpo": "Mathematical reasoning and problem solving",
+      "HuggingFaceTB/cosmopedia-100k": "Educational content generation",
+      "MegaScience/MegaScience": "Answer questions or follow instructions based on the given context",
+      "microsoft/NextCoderDataset": "You are an expert AI programming assistant specialized in code editing, debugging, and refactoring across multiple languages (Python, Java, C++, C, Rust, JavaScript, Go, Kotlin).\n\nPrecision: Follow instructions meticulously—whether fixing errors, optimizing, or translating code.\n\nContext Awareness: Preserve functionality, adhere to style conventions, and respect language-specific idioms.\n\nExplanation: For complex edits, briefly justify changes unless instructed otherwise.\n\nSafety: Reject ambiguous or harmful requests (e.g., insecure code patterns).\n\nAlways output the final edited code in a clean, executable format.",
+      "MegaScience/TextbookReasoning": "Solve scientific questions with clear, step-by-step reasoning grounded in textbook-level knowledge.",
+      "SynthLabsAI/Big-Math-RL-Verified": "Solve diverse math problems ranging from K–12 to olympiad-level with clear, logical reasoning based on high-quality educational and competition datasets.",
+      "open-r1/OpenR1-Math-220k": "Solve diverse math problems ranging from K–12 to olympiad-level with clear, logical reasoning based on high-quality educational and competition datasets.",
+      "microsoft/orca-math-word-problems-200k": "You are tasked with solving rigorous, high-quality mathematical problems requiring deep reasoning and precise step-by-step solutions.",
+      "microsoft/EpiCoder-func-380k": "You are an expert AI programming assistant specialized in code editing, debugging, and refactoring across multiple languages (Python, Java, C++, C, Rust, JavaScript, Go, Kotlin).\n\nPrecision: Follow instructions meticulously—whether fixing errors, optimizing, or translating code.\n\nContext Awareness: Preserve functionality, adhere to style conventions, and respect language-specific idioms.\n\nExplanation: For complex edits, briefly justify changes unless instructed otherwise.\n\nSafety: Reject ambiguous or harmful requests (e.g., insecure code patterns).\n\nAlways output the final edited code in a clean, executable format.",
+      "nvidia/OpenScienceReasoning-2": "Solve multi-domain reasoning problems—from STEM to humanities—with clear, step-by-step logic using synthetic question-answer pairs designed to enhance LLM performance on advanced benchmarks.",
+      "nvidia/AceReason-Math": "Solve challenging, high-quality math problems with precise, verifiable reasoning.",
+      "HelpingAI/Intermediate-Thinking-130k":"You are tasked with generating responses using intermediate thinking—pausing to reflect, evaluate, and refine your reasoning step by step. Instead of producing answers in a single pass, break down your thought process into iterative stages: analyze the problem, explore possible solutions, identify errors or gaps, and improve your reasoning before arriving at a final, well-justified answer. This mirrors human-like reflection and self-correction, enhancing accuracy and depth in complex reasoning tasks.",
+      "HelpingAI/Dhanishtha-2.0-SUPERTHINKER":"You are tasked with generating thoughtful, multi-phase responses that combine deep reasoning and emotional awareness. Use structured <think> blocks to break down complex problems—philosophical, technical, ethical, mathematical, or personal—into iterative reasoning steps. Within each response, reflect, evaluate, and refine your logic before concluding. Simultaneously, employ <ser> blocks to model appropriate emotional states, ensuring responses are not only intelligent but also empathetic and contextually nuanced. This multilingual, high-quality reasoning corpus captures the cognitive and affective intelligence of Dhanishtha-2.0, the world’s first LLM to implement Intermediate Thinking"
+    },
+    "datasets_with_messages": ["miromind-ai/MiroVerse-v0.1"],
+    "messages_field_name": "messages",
+    "preserve_existing_fields": true
+  },
+  "processing": {
+    "max_records_per_dataset": 100000,
+    "max_tokens_per_record": 8096,
+    "min_tokens_per_record": 50,
+    "seed": 42,
+    "batch_size": 2000,
+    "num_workers": 8,
+    "max_memory_gb": 32,
+    "force_threading": false,
+    "cache_dir": "H:\\Hugging_Face_Cache"
+  },
+  "tokenizer": {
+    "primary": "Qwen/Qwen3-0.6B",
+    "fallback": "gpt2"
+  },
+  "analysis": {
+    "token_thresholds": [512, 1024, 2048, 4096, 8096]
+  },
+  "output": {
+    "save_full_dataset": false,
+    "full_dataset_filename": "data/merged_dataset.jsonl",
+    "create_splits": true,
+    "test_size": 0.2,
+    "train_filename": "data/train_dataset.jsonl",
+    "val_filename": "data/val_dataset.jsonl",
+    "create_dataset_card": false,
+    "dataset_card_dir": "data/",
+    "push_to_hub": {
+      "enabled": true,
+      "repo_name": "kshitijthakkar/loggenix_moe_mcs_v3",
+      "private": false
+    }
+  }
+}

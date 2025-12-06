@@ -1,0 +1,47 @@
+# Core dependencies for dataset processing
+datasets>=3.6.0
+transformers>=4.52.0
+pandas>=2.3.0
+numpy>=2.3.0
+
+# HuggingFace Hub integration
+huggingface-hub>=0.33.0
+
+# Tokenization
+tokenizers>=0.21.0
+safetensors>=0.5.0
+
+# Performance & monitoring
+psutil>=5.9.0
+multiprocess>=0.70.16
+
+# Data serialization and processing
+pyarrow>=20.0.0
+dill>=0.3.8
+
+# File and network utilities
+fsspec>=2025.3.0
+aiohttp>=3.12.0
+requests>=2.32.0
+filelock>=3.18.0
+
+# Utilities
+tqdm>=4.67.0
+pyyaml>=6.0.0
+regex>=2024.11.0
+xxhash>=3.5.0
+
+# Optional dependencies for specific environments
+# Uncomment if using Google Colab
+# google-colab
+
+# Uncomment if using Jupyter notebooks
+# ipykernel>=6.0.0
+# jupyter>=1.0.0
+
+# Development dependencies (optional)
+# Uncomment for development
+# pytest>=7.4.0
+# black>=23.0.0
+# flake8>=6.0.0
+# mypy>=1.0.0
