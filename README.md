@@ -202,6 +202,20 @@ This tool complements HuggingFace's new dataset features:
 2. **Edit → Validate → Re-merge**: Make row-level edits, then re-merge with validation
 3. **Create → Share → Iterate**: Build custom datasets and share via HF Hub
 
+### Feature Comparison
+
+| Feature | Manual Process | HF Duplication | **This Tool** |
+|---------|---------------|----------------|---------------|
+| Multi-dataset merge | ❌ | ❌ | ✅ |
+| Format standardization | ❌ | ❌ | ✅ |
+| Token filtering | ❌ | ❌ | ✅ |
+| Memory optimization | ❌ | ❌ | ✅ |
+| Chat format conversion | ❌ | ❌ | ✅ |
+| Validation | ❌ | ❌ | ✅ |
+| Auto dataset cards | ❌ | ❌ | ✅ |
+| HF Hub upload | ✅ | ✅ | ✅ |
+| Row-level edit | ❌ | ✅ | Planned |
+
 ## 🌍 Real-World Example
 
 From the [TraceMind ecosystem](https://huggingface.co/blog/MCP-1st-Birthday/tracemind-ecosystem) (HuggingFace Hackathon project):
